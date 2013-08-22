@@ -1,0 +1,42 @@
+@(signinform : Form[signin.Login])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("welcome to EXTR ") {
+
+
+<div class="container-narrow">
+				<fieldset>
+            <legend>Sign in or <a href="@routes.Application.index()" >Sign up</a></legend>
+      
+      @helper.form(action=routes.signin.enter()){
+      
+      @if(signinform.hasGlobalErrors) {
+        <p class="error">
+            <span><b>@signinform.globalError.message</b></span>
+        </p>
+    }
+      
+      
+      @inputText(
+      				signinform("username"),
+      				'_label->"Enter Username",
+      				'_help  ->  "Please Enter a valid username.")
+      				
+      				
+      @inputPassword(
+      				signinform("password"),
+      				'_label->"Enter Password",
+      				'_help  ->  "Please Enter a valid Password.")
+      				
+      				
+   <input class="btn  btn-large " type="submit" value="signin" />
+   
+   
+
+   }
+   </fieldset>
+   </div>
+
+}
