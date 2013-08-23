@@ -30,5 +30,5 @@ This is a sample application using Play Framework 2.1
 * for distribution See LICENSE file
 
 ## Contact
-Linkedin: in.linkedin.com/in/rahulkulhari/
-Twitter : @Rk_here
+* Linkedin: in.linkedin.com/in/rahulkulhari/
+* Twitter : @Rk_here
